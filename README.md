@@ -38,29 +38,6 @@ Gemini 3.0 is a responsive web application built with React and styled using raw
 
 The application should now be running at `http://localhost:3000`.
 
-## Folder Structure
-
-```bash
-gemini-3.0/
-│
-├── public/
-│   ├── index.html         # Entry point for the React app
-│   └── favicon.ico        # Favicon for the app
-│
-├── src/
-│   ├── components/        # Reusable components
-│   ├── config/            # Configuration files (API keys, etc.)
-│   ├── assets/            # Static assets (images, etc.)
-│   ├── App.js             # Main application component
-│   ├── index.js           # React DOM rendering logic
-│   └── styles/            # Raw CSS files
-│
-├── .gitignore             # Ignored files for Git
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation
-
-// const apiKey = 'YOUR_GOOGLE_GEMINI_API_KEY';
-
 **Consider giving a star if you like it ☃️**
 
 ### Author: Ikramul Hasan Rakib
