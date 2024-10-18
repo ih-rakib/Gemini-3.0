@@ -15,6 +15,13 @@ const Main = () => {
     newChat,
   } = useContext(Context);
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && input) {
+      onSent(input); // Call the onSent function with the current input value
+      setInput(""); // Optionally clear the input after sending
+    }
+  };
+
   return (
     <div className="main">
       <div className="nav">
@@ -90,9 +97,10 @@ const Main = () => {
           <div className="search-box">
             <input
               onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown} // Add onKeyDown handler here
               value={input}
               type="text"
-              placeholder="What are you looking for?"
+              placeholder="Enter query..."
             />
             <div>
               <img src={assets.gallery_icon} alt="gallery-icon" />
